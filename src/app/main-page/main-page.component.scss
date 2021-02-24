@@ -1,0 +1,61 @@
+@import '../../mainStyles.scss';
+.topBar {
+    height: 68px;
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(204,61,56,1) 32%, rgba(69,72,95,1) 50%, rgba(46,74,102,1) 53%, rgba(70,156,172,1) 100%);
+
+    h1 {
+        font-family: Lato;
+        font-size: 18px;
+        letter-spacing: 12px;
+        color: $light-green;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+.amount {
+    height: 250px;
+    width: 100%;
+    background: $dark;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 58px;
+        color: white;
+
+        &.green {
+            color: lighten($green, 12%);
+        }
+
+        &.red {
+            color: lighten($red, 12%);
+        }
+    }
+    small {
+        display: block;
+        font-size: 25px;
+        color: $red;
+    }
+}
+
+.addItemSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .addItemContainer {
+        width: 680px;
+
+    }
+}
